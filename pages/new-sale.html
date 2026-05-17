@@ -10,16 +10,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/geral.css">
-    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/geral.css">
+    <link rel="stylesheet" href="../styles/new-sale.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
-
 <body>
-    <main class="dashboard">
-        
-         <div class="overlay"></div>
+    <main>
+        <div class="overlay"></div>
          
          <!-- SIDEBAR -->
          <aside class="sidebar">
@@ -30,14 +28,14 @@
                 </span>
             </button>
 
-            <a href="index.html" class="active"> 
+            <a href="../index.html"> 
                 <span class="material-symbols-outlined">
                     home
                 </span> 
                 Dashboard
             </a>
 
-            <a href="pages/new-sale.html"> 
+            <a href="new-sale.html" class="active"> 
                 <span class="material-symbols-outlined">
                     shopping_cart
                 </span> 
@@ -78,42 +76,14 @@
                 </button>
             </header>
 
-            <section class="dashboard-grid">
-                <!-- CARDS -->
-                <section class="cards">
-                    <div class="card">
-                        <h3>Faturamento do dia</h3>
-                        <strong>R$</strong>
-                        <p>% vs ontem</p>
-                    </div>
-                    <div class="card">
-                        <h3>Quantidade de Vendas</h3>
-                        <strong>R$</strong>
-                        <p>% vs ontem</p>
-                    </div>
-                    <div class="card">
-                        <h3>Faturamento do Mês</h3>
-                        <strong>R$</strong>
-                        <p>% vs ontem</p>
-                    </div>
-                    <div class="card">
-                        <h3>Ticket Médio</h3>
-                        <strong>R$</strong>
-                        <p>% vs ontem</p>
-                    </div>
-                </section>
-
-                <!-- GRÁFICOS -->
-                <div class="chart week-chart">
-                    <h2>Faturamento últimos 7 dias</h2>
-                </div>
-                <div class="chart month-chart">
-                    <h2>Faturamento do mês</h2>
-                </div>
+            <section class="form">
+                <form action="">
+                    <h1>teste</h1>
+                </form>
             </section>
          </section>
     </main>
 
-    <script src="js/menu.js" defer></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
