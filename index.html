@@ -29,15 +29,40 @@
                 </span>
             </button>
 
-            <a href="index.html">inicio</a>
+            <a href="index.html" class="active"> 
+                <span class="material-symbols-outlined">
+                    home
+                </span> 
+                Dashboard
+            </a>
 
-            <a href="">nova venda</a>
+            <a href=""> 
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span> 
+                Nova Venda
+            </a>
 
-            <a href="">lista de vendas</a>
+            <a href=""> 
+                <span class="material-symbols-outlined">
+                    list
+                </span> 
+                Lista de Vendas
+            </a>
 
-            <a href="">relatórios</a>
+            <a href=""> 
+                <span class="material-symbols-outlined">
+                    analytics
+                </span> 
+                Relatórios
+            </a>
 
-            <a href="">dark/light</a>
+            <a href=""> 
+                <span class="material-symbols-outlined">
+                    dark_mode
+                </span> 
+                Dark/Light
+            </a>
          </aside>
 
          <section class="content">
@@ -99,6 +124,7 @@
         // ABRIR MENU
         menuBtn.addEventListener('click', () => {
             sidebar.classList.add('active');
+            
             overlay.classList.add('active');
         });
 
