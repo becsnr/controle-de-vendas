@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="estilos/dashboard.css">
 </head>
 <body>
     <main class="dashboard">
@@ -31,40 +32,36 @@
                 <h1>Dashboard</h1>
             </header>
 
-            <!-- CARDS -->
-            <section class="cards">
-                <div class="card">
-                    <h3>Faturamento do dia</h3>
-                    <strong>R$</strong>
-                    <p>% vs ontem</p>
-                </div>
+            <section class="dashboard-grid">
+                <!-- CARDS -->
+                <section class="cards">
+                    <div class="card">
+                        <h3>Faturamento do dia</h3>
+                        <strong>R$</strong>
+                        <p>% vs ontem</p>
+                    </div>
+                    <div class="card">
+                        <h3>Quantidade de Vendas</h3>
+                        <strong>R$</strong>
+                        <p>% vs ontem</p>
+                    </div>
+                    <div class="card">
+                        <h3>Faturamento do Mês</h3>
+                        <strong>R$</strong>
+                        <p>% vs ontem</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ticket Médio</h3>
+                        <strong>R$</strong>
+                        <p>% vs ontem</p>
+                    </div>
+                </section>
 
-                <div class="card">
-                    <h3>Quantidade de Vendas</h3>
-                    <strong>R$</strong>
-                    <p>% vs ontem</p>
-                </div>
-
-                <div class="card">
-                    <h3>Faturamento do Mês</h3>
-                    <strong>R$</strong>
-                    <p>% vs ontem</p>
-                </div>
-
-                <div class="card">
-                    <h3>Ticket Médio</h3>
-                    <strong>R$</strong>
-                    <p>% vs ontem</p>
-                </div>
-            </section>
-
-            <!-- GRÁFICOS -->
-            <section class="charts">
-                <div class="chart">
+                <!-- GRÁFICOS -->
+                <div class="chart week-chart">
                     <h2>Faturamento últimos 7 dias</h2>
                 </div>
-
-                <div class="chart">
+                <div class="chart month-chart">
                     <h2>Faturamento do mês</h2>
                 </div>
             </section>
