@@ -11,11 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/dashboard.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
+
 <body>
     <main class="dashboard">
-        <!-- SIDEBAR -->
+        
+         <div class="overlay"></div>
+         
+         <!-- SIDEBAR -->
          <aside class="sidebar">
+            <!-- BOTÃO DE FECHAR MENU -->
+            <button class="close-btn">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+
             <a href="index.html">inicio</a>
 
             <a href="">nova venda</a>
@@ -30,6 +43,13 @@
          <section class="content">
             <header class="topbar">
                 <h1>Dashboard</h1>
+
+                <!-- BOTÃO MENU HAMBURGUER -->
+                <button class="menu-btn">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
             </header>
 
             <section class="dashboard-grid">
@@ -67,5 +87,34 @@
             </section>
          </section>
     </main>
+
+    <script>
+        // BOTÃO MENU
+        const menuBtn = document.querySelector('.menu-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        // ABRIR MENU
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        });
+
+        // FECHAR MENU
+        function closeMenu() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        closeBtn.addEventListener('click', closeMenu); // botão x
+
+        overlay.addEventListener('click', closeMenu); // clicar fora
+
+        sidebarLinks.forEach(link => { // clicar nos links
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
 </body>
 </html>
