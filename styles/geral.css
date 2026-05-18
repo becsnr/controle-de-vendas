@@ -30,7 +30,7 @@ main {
     gap: 10px;
 
     width: 200px;
-    padding-top: 20px;
+    padding: 40px 10px;
     background-color: white;
 }
 
@@ -44,17 +44,14 @@ main {
     text-decoration: none;
     color: black;
     padding: 14px;
+    border-radius: 15px;
 
     transition: .3s;
 }
 
-.sidebar a:hover {
-    background: #80808015;
-    color: #1b0d33;
-}
-
-.sidebar a.active {
-    background: #80808024;
+.sidebar a:hover, .sidebar a.active {
+    background: #f3e8ff;
+    color: #7c3aed;
 }
 
 .menu-btn, .close-btn {
