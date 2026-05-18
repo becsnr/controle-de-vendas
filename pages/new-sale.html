@@ -66,7 +66,7 @@
 
          <section class="content">
             <header class="topbar">
-                <h1>Dashboard</h1>
+                <h1>Nova Venda</h1>
 
                 <!-- BOTÃO MENU HAMBURGUER -->
                 <button class="menu-btn">
@@ -77,8 +77,49 @@
             </header>
 
             <section class="form">
-                <form action="">
-                    <h1>teste</h1>
+                <form action="" method="post">
+                    <div class="input-group">
+                        <label for="produto">Produto/Serviço</label>
+                        <select name="produto" id="produto">
+                            <option value="" disabled selected hidden>Selecione um produto</option>
+                            <option value="p1">produto 1</option>
+                            <option value="p2">produto 2</option>
+                            <option value="p3">produto 3</option>
+                            <option value="p4">produto 4</option>
+                        </select>
+                    </div>
+
+                    <div class="double-line">
+                        <div class="input-group">
+                            <label for="quantidade">Quantidade</label>
+                            <input type="number" name="quantidade" id="quantidade" min="1" value="1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="valor">Valor (R$)</label>
+                            <input type="number" name="valor" id="valor" step="0.01" min="0" placeholder="0,00" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pagamento">Forma de Pagamento</label>
+                        <select name="pagamento" id="pagamento" required>
+                            <option value="" disabled selected hidden>Selecione a forma de pagamento</option>
+                            <option value="pix">Pix</option>
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="debito">Cartão de Débito</option>
+                            <option value="credito">Cartão de Crédito</option>
+                        </select>
+                    </div>
+
+                    <div class="total-box">
+                        <span class="total-title">Total da Venda</span>
+                        <span class="total-value">R$ 0,00</span>
+                    </div>
+
+                    <div class="btns">
+                        <button type="reset" class="btn-clear"> Limpar</button>
+                        <button type="submit" class="btn-submit">Registrar Venda</button>
+                    </div>
                 </form>
             </section>
          </section>
