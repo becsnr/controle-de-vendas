@@ -73,6 +73,20 @@ main {
         padding: 20px;
     }
 
+    .close-btn {
+        display: block;
+        /* width: 120px; */
+
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    /* .close-btn:hover {
+        border: 1px solid #7c3aed;
+        border-radius: 8px;
+    } */
+
     .menu-btn {
         display: block;
 
